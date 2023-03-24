@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:PRO-{MM}-{DD}-{YY}-{last_name}",
+ "creation": "2023-03-23 13:55:10.091444",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "last_name",
+  "address",
+  "age",
+  "profile",
+  "parents"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "name1.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Last Name"
+  },
+  {
+   "depends_on": "eval: doc.name1;",
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Age",
+   "mandatory_depends_on": "eval: doc.name1;"
+  },
+  {
+   "fieldname": "profile",
+   "fieldtype": "Link",
+   "label": "profile",
+   "options": "Profile"
+  },
+  {
+   "fieldname": "parents",
+   "fieldtype": "Table",
+   "label": "Parents",
+   "options": "Parents"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-23 14:20:37.263535",
+ "modified_by": "Administrator",
+ "module": "School App",
+ "name": "Profile",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "age, last_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "age"
+}

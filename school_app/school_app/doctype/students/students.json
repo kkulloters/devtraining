@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YYYY}-{#######}",
+ "creation": "2023-03-23 14:53:30.376752",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "id_number",
+  "course",
+  "course_name",
+  "year_level",
+  "status",
+  "address",
+  "grades",
+  "total_subject_grades"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Courses"
+  },
+  {
+   "fetch_from": "course.course_name",
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "label": "Course Name"
+  },
+  {
+   "fieldname": "year_level",
+   "fieldtype": "Select",
+   "label": "Year Level",
+   "options": "1st Year\n2nd Year\n3rd Year\n4th Year"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Regular\nIrregular"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Long Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "grades",
+   "fieldtype": "Table",
+   "label": "Grades",
+   "options": "Subject Grades"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_subject_grades",
+   "fieldtype": "Int",
+   "label": "Total Subject Grades",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-23 16:52:34.704755",
+ "modified_by": "Administrator",
+ "module": "School App",
+ "name": "Students",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

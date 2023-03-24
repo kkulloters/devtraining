@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:subject_code",
+ "creation": "2023-03-23 15:51:51.874131",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subject_code",
+  "teacher",
+  "subject_names"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject_code",
+   "fieldtype": "Data",
+   "label": "Subject Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "teacher",
+   "fieldtype": "Link",
+   "label": "Teacher",
+   "options": "User"
+  },
+  {
+   "fieldname": "subject_names",
+   "fieldtype": "Data",
+   "label": "Subject Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-23 16:04:31.881838",
+ "modified_by": "Administrator",
+ "module": "School App",
+ "name": "Subjects",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

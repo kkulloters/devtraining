@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-23 14:19:46.218936",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mother",
+  "father"
+ ],
+ "fields": [
+  {
+   "fieldname": "mother",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mother"
+  },
+  {
+   "fieldname": "father",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Father"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-23 14:21:59.060966",
+ "modified_by": "Administrator",
+ "module": "School App",
+ "name": "Parents",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
